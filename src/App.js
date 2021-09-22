@@ -43,7 +43,7 @@ const App = () => {
     }
     else {
       showAlert(true, "success", "Item Added To a List");
-      const newItem = { id: new Date().getTime().toString(), title: name };
+      const newItem = { id: Math.random(), title: name };
       setList([...list, newItem]);
       setName("");
     }
